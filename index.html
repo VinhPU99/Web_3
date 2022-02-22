@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html1 lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-3</title>
+    <!-- Reset CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/Grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="header__head">
+            <div class=" header-wide grid row">
+                <div class=" col l-4 m-6 c-12 header__head-logo">
+                    <img src="./assets/img/logo-3.png" alt="">
+                </div>
+                <div class=" col l-4 m-6 c-12 header__search">
+                    <div class="header__search-option">
+                        <span class="header__search-selecter">Sản phẩm</span>
+                        <ul class="header__search-board" >
+                            <li class="header__search-item">Sản phẩm</li>
+                            <li class="header__search-item">Tin tức</li>
+                        </ul>      
+                        <i class="fas fa-chevron-down header__search-icon"></i>
+                    </div>
+                    <input class="btn-input" type="text" placeholder="Từ khóa tìm kiếm">
+                    <i class="fas fa-search icon"></i>
+                </div>
+                <div class=" col l-4 m-0 c-0 header__icon">
+                    <i class="fas fa-user icon"></i>
+                    <i class="fas fa-undo-alt icon"></i>
+                    <i class="fas fa-shopping-cart icon"></i>
+                    <span class="shopping-notice">0</span>
+                </div>
+            </div>
+        </div>
+        <!-- *********************************************************************************** -->
+        <div class="header__nav">
+            <div class="nav">
+                <ul class="nav__board">
+                    <li class="nav__item">
+                        <i class="fas fa-bolt"></i>
+                        Điện lạnh
+                        <ul class="subnav">
+                            <li class="subnav-item">Tủ lạnh</li>
+                            <li class="subnav-item">Máy sấy</li>
+                            <li class="subnav-item">Tủ mát</li>
+                            <li class="subnav-item">Máy giặt</li>
+                            <li class="subnav-item">Tủ đông</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-hamburger"></i>
+                        Đồ gia dụnng
+                        <ul class="subnav">
+                            <li class="subnav-item">Máy xay
+                                <ul class="subnav-2">
+                                    <li class="subnav-item-2">Máy xay sinh tố</li>
+                                    <li class="subnav-item-2">Máy ép trái cây</li>
+                                    <li class="subnav-item-2">Máy xay thịt</li>
+                                </ul>
+                            </li>
+                            <li class="subnav-item">Quạt</li>
+                            <li class="subnav-item">Bình nóng & lạnh</li>
+                            <li class="subnav-item">Nồi và bếp</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-volume-up"></i>
+                        Điện tử và âm thanh
+                        <ul class="subnav">
+                            <li class="subnav-item">Tivi</li>
+                            <li class="subnav-item">Dàn âm thanh</li>
+                            <li class="subnav-item">Các sản phẩm khác</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-mobile-alt"></i>
+                        Điện thoại
+                        <ul class="subnav">
+                            <li class="subnav-item">Điện thoại di động</li>
+                            <li class="subnav-item">Phụ kiện điện thoại</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-video"></i>
+                        Kỹ thuật số
+                        <ul class=" sub subnav-3">
+                            <li class="subnav-item-3">Máy ảnh
+                                <ul>
+                                    <li>Máy ảnh chuyên nghiệp</li>
+                                    <li>Máy ảnh lấy ngay</li>
+                                    <li>Máy ảnh du lịch</li>
+                                </ul>
+                            </li>
+                            <li class="subnav-item-3">Máy quay phim
+                                <ul>
+                                    <li>Máy quay du lịch</li>
+                                    <li>Flycam</li>
+                                    <li>Máy quay thể thao</li>
+                                </ul>
+                            </li>
+                            <li class="subnav-item-3"> Nghe nhạc
+                                <ul>
+                                    <li>Máy nghe nhạc bỏ túi</li>
+                                    <li>Máy nghe nhạc đôi</li>
+                                    <li>Máy nghe nhạc đơn</li>
+                                </ul>
+                            </li>
+                            <li class="subnav-item-3">Máy ghi âm
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-laptop"></i>
+                        Laptop tablet
+                        <ul class="subnav">
+                            <li class="subnav-item">Dell</li>
+                            <li class="subnav-item">Hp</li>
+                            <li class="subnav-item">Asus</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-tv"></i>
+                        Máy tính & linh kiện
+                        <ul class="subnav">
+                            <li class="subnav-item">Máy tính</li>
+                            <li class="subnav-item">Linh kiện</li>
+                            <li class="subnav-item">Thiết bị văn phòng</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav__mobile">
+            <div class="nav__mobile-container">
+                <label for="btn__nav-moblie">
+                    <i class="fas fa-bars icon__mobile"></i>
+                </label>
+                <input type="checkbox" id="btn__nav-moblie">
+                <label for="btn__nav-moblie" class="over-screen"></label>
+                <ul class="nav__board-mobile">
+                    <li class="nav__item-mobile">
+                        <div class="div-container">
+                            <div class="div-1">
+                                <i class="fas fa-bolt icon-mobile"></i>
+                                Điện lạnh
+                            </div >
+                            <div class ="div-2">
+                                <i class="fas fa-chevron-down "></i>
+                            </div>
+                        </div>
+                        <ul class="subnav-mobile">
+                            <li class="subnav-item-mobile">Tủ lạnh</li>
+                            <li class="subnav-item-mobile">Máy sấy</li>
+                            <li class="subnav-item-mobile">Tủ mát</li>
+                            <li class="subnav-item-mobile">Máy giặt</li>
+                            <li class="subnav-item-mobile none-border">Tủ đông</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item-mobile">
+                        <div class="div-container">
+                            <div class="div-1">
+                                <i class="fas fa-hamburger icon-mobile"></i>
+                                Đồ gia dụng
+                            </div>
+                            <div class="div-2">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="subnav-mobile">
+                            <li class="nav__item-mobile none-border">
+                                <div class="div-container">
+                                    <div class="div-1">
+                                         Máy xay 
+                                    </div>
+                                    <div class ="div-2">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <ul class="subnav-mobile subnav-mobile-2"> 
+                                    <li class="subnav-item-mobile subnav-item-mobile-2 ">Máy xay sinh tố</li> 
+                                    <li class="subnav-item-mobile subnav-item-mobile-2 ">Máy ép trái cây</li> 
+                                    <li class="subnav-item-mobile subnav-item-mobile-2 none-border ">Máy xay thịt</li>
+                                </ul>
+                            </li>
+                            <li class="subnav-item-mobile">Quạt</li>
+                            <li class="subnav-item-mobile">Bình nóng & lạnh</li>
+                            <li class="subnav-item-mobile none-border">Nồi và bếp</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item-mobile">
+                        <div class="div-container">
+                            <div class="div-1">
+                                <i class="fas fa-volume-up icon-mobile"></i>
+                                Điện tử và âm thanh      
+                            </div>
+                            <div class="div-2">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="subnav-mobile">
+                            <li class="subnav-item-mobile">Tivi</li>
+                            <li class="subnav-item-mobile">Dàn âm thanh</li>
+                            <li class="subnav-item-mobile none-border">Các sản phẩm khác</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item-mobile">
+                        <div class="div-container">
+                            <div class="div-1">
+                                <i class="fas fa-mobile-alt icon-mobile"></i>
+                                Điện thoại     
+                            </div>
+                            <div class="div-2">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="subnav-mobile">
+                            <li class="subnav-item-mobile">Điện thoại di động</li>
+                            <li class="subnav-item-mobile none-border">Phụ kiện điện thoại</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item-mobile">
+                        <div class="div-container">
+                            <div class="div-1">
+                                <i class="fas fa-video icon-mobile"></i>
+                                Kỹ thuật số
+                            </div>
+                            <div class="div-2">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="subnav-mobile">
+                            <li class="subnav-item-mobile font-mobile-main">Máy ảnh</li>
+                            <li class="subnav-item-mobile font-mobile" >Máy ảnh chuyên nghiệp</li>
+                            <li class="subnav-item-mobile font-mobile">Máy ảnh lấy ngay</li>
+                            <li class="subnav-item-mobile font-mobile">Máy ảnh du lịch</li>
+                            <li class="subnav-item-mobile font-mobile-main">Máy quay phim</li>
+                            <li class="subnav-item-mobile font-mobile">Máy quay du lịch</li>
+                            <li class="subnav-item-mobile font-mobile">Flycam</li>
+                            <li class="subnav-item-mobile font-mobile">Máy quay thể thao</li>
+                            <li class="subnav-item-mobile font-mobile-main"> Nghe nhạc</li>
+                            <li class="subnav-item-mobile font-mobile">Máy nghe nhạc bỏ túi</li>
+                            <li class="subnav-item-mobile font-mobile">Máy nghe nhạc đôi</li>
+                            <li class="subnav-item-mobile font-mobile">Máy nghe nhạc đơn</li>
+                            <li class="subnav-item-mobile font-mobile-main">Máy ghi âm</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item-mobile">
+                        <div class="div-container">
+                            <div class="div-1">
+                                <i class="fas fa-laptop icon-mobile"></i>
+                                Laptop tablet
+                            </div>
+                            <div class="div-2">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="subnav-mobile">
+                            <li class="subnav-item-mobile">Dell</li>
+                            <li class="subnav-item-mobile">Hp</li>
+                            <li class="subnav-item-mobile none-border">Asus</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item-mobile">
+                        <div class="div-container">
+                            <div class="div-1">
+                                <i class="fas fa-tv icon-mobile"></i>
+                                Máy tính & linh kiện
+                            </div>
+                            <div class="div-2">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="subnav-mobile">
+                            <li class="subnav-item">Máy tính</li>
+                            <li class="subnav-item">Linh kiện</li>
+                            <li class="subnav-item none-border">Thiết bị văn phòng</li>
+                        </ul>
+                    </li>
+                    <label class="exit" for="btn__nav-moblie"><i class="fas fa-times icon__time"></i></label>
+                </ul>
+                <div class="header__icon-moblie">
+                    <i class="fas fa-user icon"></i>
+                    <i class="fas fa-undo-alt icon"></i>
+                    <i class="fas fa-shopping-cart icon"></i>
+                    <span class="shopping-notice">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Slider -->
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="pick"  class="btn-radio" id="radio1">
+            <input type="radio" name="pick" class="btn-radio" id="radio2">
+            <input type="radio" name="pick" class="btn-radio" id="radio3">
+            <input type="radio" name="pick" class="btn-radio" id="radio4">
+            <div class="slide first">
+                <img src="./assets/img/yone.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/img/Zed_0.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/img/Hinh_1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/img/yasuo.jpg" alt="">
+            </div>
+            <div class="manual_slider">
+                <label for="radio1" class="btn-manual"></label>
+                <label for="radio2" class="btn-manual"></label>
+                <label for="radio3" class="btn-manual"></label>
+                <label for="radio4" class="btn-manual"></label>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider -->
+
+    <!-- Start Drag Slider -->
+    <div class="container_dragSlider">
+
+        <div class="imgs row ">
+            <div class="col l-3 m-3 c-6 ">
+                <img src="./assets/img/drag_1.jpg" >
+                <div class="over-screen-slider">
+                    <i class="far fa-eye"></i>
+                    <span>Điện thoại</span>
+                </div>
+            </div >
+            <div class="col l-3 m-3 c-6 ">
+                <img src="./assets/img/drag_2.jpg" >
+                <div class="over-screen-slider">
+                    <i class="far fa-eye"></i>
+                    <span>Điện lạnh</span>
+                </div>
+            </div>
+            <div class="col l-3 m-3 c-6 ">
+                <img src="./assets/img/drag_3.jpg" >
+                <div class="over-screen-slider">
+                    <i class="far fa-eye"></i>
+                    <span>Điện tử và âm thanh</span>
+                </div>
+            </div>
+            <div class="col l-3 m-3 c-6 ">
+                <img src="./assets/img/drag4.jpg" >
+                <div class="over-screen-slider">
+                    <i class="far fa-eye"></i>
+                    <span>Máy tính</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Drag Slider -->
+
+    <!-- Start Content -->
+    <div class="content">
+        <!-- Máy tính -->
+        <div class="tab__product">
+            <h3>Máy tính</h3>
+            <ul>
+                <li>Sản phẩm mới</li>
+                <li>Sản phẩm nổi bật</li>
+                <li> Khuyến mãi</li>
+            </ul>
+        </div>
+        <div class="cotainer">
+            <div class="tab_product-slider row">
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/may-in-phun-mau.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/may-in-phun-mau.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/may-in-phun-mau.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/may-in-phun-mau.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>        
+            </div>
+            <div class="switch">
+                <i class="fas fa-chevron-left icon-slider left"></i>
+                <i class="fas fa-chevron-right icon-slider right "></i>
+            </div>
+        </div>
+        <div class="banner row">
+            <img class="col l-8 m-8 c-12 ban1" src="./assets/img/custom-banner-SAMSUNG.png" alt="">
+            <img class="col l-4 m-4 c-12 ban2" src="./assets/img/custom-banner-ad2.png" alt="">
+        </div>
+
+        <!-- Điện thoại -->
+        <div class="tab__product">
+            <h3>Điện thoại</h3>
+            <ul>
+                <li>Sản phẩm mới</li>
+                <li>Sản phẩm nổi bật</li>
+                <li> Khuyến mãi</li>
+            </ul>
+        </div>
+        <div class="cotainer">
+            <div class="tab_product-slider row">
+                <!-- item 1 -->
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_samsung-galaxy-j5.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Samsung Galaxy J5</h4>
+                    <p class="price">2,990,000 đ</p>
+                </div>
+                <!-- item 2 -->
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_samsung-galaxy-a5.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Samsung Galaxy A5</h4>
+                    <p class="price">7,999,000 đ</p>
+                </div>
+                <!-- item 3 -->
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_samsung-galaxy-s8.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Samsung Galaxy S8 G950F</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>
+                <!-- item 4 -->
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_apple-iphone-7.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>        
+            </div>
+            <div class="switch">
+                <i class="fas fa-chevron-left icon-slider left"></i>
+                <i class="fas fa-chevron-right icon-slider right "></i>
+            </div>
+        </div>
+
+        <!-- Đồ gia dụng -->
+        <div class="tab__product">
+            <h3>Đồ gia dụng</h3>
+            <ul>
+                <li>Sản phẩm mới</li>
+                <li>Sản phẩm nổi bật</li>
+                <li> Khuyến mãi</li>
+            </ul>
+        </div>
+        <div class="cotainer contain-2">
+            <div class=" row row-extra">
+                <!-- item 1 -->
+                <div class="product col col2 l-3 m-3 c-6  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_samsung-galaxy-j5.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Samsung Galaxy J5</h4>
+                    <p class="price">2,990,000 đ</p>
+                </div>
+                <!-- item 2 -->
+                <div class="product col col2 l-3 m-3 c-6  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_samsung-galaxy-a5.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Samsung Galaxy A5</h4>
+                    <p class="price">7,999,000 đ</p>
+                </div>
+                <!-- item 3 -->
+                <div class="product col col2 l-3 m-3 c-6  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_samsung-galaxy-s8.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Samsung Galaxy S8 G950F</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>
+                <!-- item 4 -->
+                <div class="product col col2 l-3 m-3 c-6  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_apple-iphone-7.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>  
+                <!-- item 5 -->
+                <div class="product col col2 l-3 m-3 c-6  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_apple-iphone-7.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>   
+                <!-- item 6 -->
+                <div class="product col col2 l-3 m-3 c-6  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_b-p-gas-ban-sunhouse.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>  
+                <!-- item 7 -->
+                <div class="product col col2 l-3 m-3 c-6  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_apple-iphone-7.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>     
+                <!-- item 8 -->
+                <div class="product col col2 l-3 m-3 c-6  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_may-xay-a-n-ng-philips.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>           
+            </div>
+            <div class="switch-3">
+                <i class="fas fa-chevron-left icon-slider-3 pre-mobile"></i>
+                <i class="fas fa-chevron-right icon-slider-3 next-mobile "></i>
+            </div>
+            <div class="switch-2">
+                <i class="fas fa-chevron-left icon-slider-2 pre "></i>
+                <i class="fas fa-chevron-right icon-slider-2 next "></i>
+            </div>
+        </div>
+           <!-- Kỹ thuật số -->
+        <div class="tab__product">
+            <h3>Kỹ thuật số</h3>
+            <ul>
+                <li>Sản phẩm mới</li>
+                <li>Sản phẩm nổi bật</li>
+                <li> Khuyến mãi</li>
+            </ul>
+        </div>
+        <div class="cotainer">
+            <div class="tab_product-slider row">
+                <!-- item 1 -->
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_may-quay-phim-sony-hdr-pj440-en-chinh-hang-th-nh-8gb-tui-sony-74384-mayquayphimsonypj440e-2.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Samsung Galaxy J5</h4>
+                    <p class="price">2,990,000 đ</p>
+                </div>
+                <!-- item 2 -->
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_may-quay-phim-sony-hdr-pj440-en-chinh-hang-th-nh-8gb-tui-sony-74384-mayquayphimsonypj440e-2.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Samsung Galaxy A5</h4>
+                    <p class="price">7,999,000 đ</p>
+                </div>
+                <!-- item 3 -->
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_may-quay-phim-sony-hdr-pj440-en-chinh-hang-th-nh-8gb-tui-sony-74384-mayquayphimsonypj440e-2.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Samsung Galaxy S8 G950F</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>
+                <!-- item 4 -->
+                <div class="product col l-3 m-3  ">
+                    <div class="img">
+                        <img src="./assets/img/thumb_350_may-quay-phim-sony-hdr-pj440-en-chinh-hang-th-nh-8gb-tui-sony-74384-mayquayphimsonypj440e-2.jpg">
+                        <div class="icon-img">
+                            <i class="fas fa-search icon-sub"></i>
+                            <i class="fas fa-shopping-cart icon-sub"></i>
+                            <i class="fas fa-store icon-sub"></i>
+                        </div>
+                    </div>
+                    <h4>Máy in phun màu Epson T60</h4>
+                    <p class="price">5,800,000 đ</p>
+                </div>        
+            </div>
+            <div class="switch">
+                <i class="fas fa-chevron-left icon-slider left"></i>
+                <i class="fas fa-chevron-right icon-slider right "></i>
+            </div>
+        </div> 
+
+        <!-- Contact -->
+        <div class="contact">
+            <div class="cotainer-3 row">
+                <div class="col l-4 m-4 c-12">
+                    <div class="item_contact">
+                        <i class="fas fa-car icon-contact"></i>
+                        <div>
+                            <h3>GIAO HÀNG MIỄN PHÍ</h3>
+                            <p>Giao hàng miễn phí cho các hóa đơn trên 500.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4 m-4 c-12">
+                    <div class="item_contact">
+                        <i class="fas fa-dollar-sign icon-contact"></i>
+                        <div>
+                            <h3>CHÍNH SÁCH HOÀN TIỀN</h3>
+                            <p>Hoàn lại 100% nếu bạn không hài lòng về chất lượng sản phẩm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4 m-4 c-12">
+                    <div class="item_contact">
+                        <i class="fas fa-gift icon-contact"></i>
+                        <div>
+                            <h3>ƯU ĐÃI SẢN PHẨM</h3>
+                            <p>Giúp người tiêu dùng sở hữu sản phẩm với giá ữu đãi tốt</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End content -->
+
+        <!-- Start Baner Drag slider -->
+        <div class="container-baner-silder">
+            <div class="ModuleSlider"> <div>MODULE SLIDER</div> </div>
+            <div class="items-outner row">
+                <div class="item-inner col l-6 m-6 c-12">
+                    <div class="i-c">
+                        <img src="./assets/img/cool-reader-nh-intro1-0.png">
+                    </div>
+                    <div class="time">
+                        <i class="fas fa-clock"></i>
+                        <span>07:32 - 24/04/2017</span>
+                    </div>
+                    <h2>Cool Reader</h2>
+                    <p>Cool Reader là một trong những công cụ đọc tốt nhất cho điện thoại thông minh Android</p>
+                    <div class="btn-more">
+                        <a href="#">XEM THÊM</a>
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
+                </div>
+                <div class="item-inner col l-6 m-6 c-12">
+                    <div class="i-c">
+                        <img src="./assets/img/edx-images.jpg">
+                    </div>
+                    <div class="time">
+                        <i class="fas fa-clock"></i>
+                        <span>07:30 - 24/04/2017</span>
+                    </div>
+                    <h2>Edx</h2>
+                    <p>Cool Reader là một trong những công cụ đọc tốt nhất cho điện thoại thông minh Android</p>
+                    <div class="btn-more">
+                        <a href="#">XEM THÊM</a>
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
+                </div>
+                <div class="item-inner col l-6 m-6 c-12">
+                    <div class="i-c">
+                        <img src="./assets/img/edx-images.jpg">
+                    </div>
+                    <div class="time">
+                        <i class="fas fa-clock"></i>
+                        <span>07:30 - 24/04/2017</span>
+                    </div>
+                    <h2>Edx</h2>
+                    <p>Cool Reader là một trong những công cụ đọc tốt nhất cho điện thoại thông minh Android</p>
+                    <div class="btn-more">
+                        <a href="#">XEM THÊM</a>
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
+                </div>
+                <div class="item-inner col l-6 m-6 c-12">
+                    <div class="i-c">
+                        <img src="./assets/img/coursera-oppo.jpg">
+                    </div>
+                    <div class="time">
+                        <i class="fas fa-clock"></i>
+                        <span>07:30 - 24/04/2017</span>
+                    </div>
+                    <h2>Corsera</h2>
+                    <p>Cool Reader là một trong những công cụ đọc tốt nhất cho điện thoại thông minh Android</p>
+                    <div class="btn-more">
+                        <a href="#">XEM THÊM</a>
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
+                </div>
+                <div class="item-inner col l-6 m-6 c-12">
+                    <div class="i-c">
+                        <img src="./assets/img/code-cademy-thiet-ke-web-wordpress.png">
+                    </div>
+                    <div class="time">
+                        <i class="fas fa-clock"></i>
+                        <span>07:30 - 24/04/2017</span>
+                    </div>
+                    <h2>Code Cademy</h2>
+                    <p>Cool Reader là một trong những công cụ đọc tốt nhất cho điện thoại thông minh Android</p>
+                    <div class="btn-more">
+                        <a href="#">XEM THÊM</a>
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
+                </div>
+                <div class="item-inner col l-6 m-6 c-12">
+                    <div class="i-c">
+                        <img src="./assets/img/cool-reader-nh-intro1-0.png">
+                    </div>
+                    <div class="time">
+                        <i class="fas fa-clock"></i>
+                        <span>07:30 - 24/04/2017</span>
+                    </div>
+                    <h2>Edx</h2>
+                    <p>Cool Reader là một trong những công cụ đọc tốt nhất cho điện thoại thông minh Android</p>
+                    <div class="btn-more">
+                        <a href="#">XEM THÊM</a>
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Baner Drag slider  -->
+
+        <!-- Start Footer -->
+        <div class="footer">
+            <div class="cotainer-3 row fix">
+                <div class="footer-1 col l-3 m-3 c-12">
+                    <h3>Về chúng tôi</h3>
+                    <p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <p class="p2">
+                        <i class="fas fa-map"></i>
+                        32 Võ Văn Tần, Đống Đa, Hà Lội
+                    </p>
+                    <p class="p2">
+                        <i class="fas fa-phone"></i>
+                        0123456789
+                    </p>
+                    <p class="p2">
+                        <i class="fas fa-envelope"></i>
+                        kakaka7766@gmail.com
+                    </p>
+                </div>
+                <div class="footerr-2 col l-3 m-3 c-12">
+                    <h3>Tin báo mới</h3>
+                    <div>
+                        <p class="p2 hover">Giới thiệu</p>
+                        <p class="p2 hover">Tuyển dụng</p>
+                        <p class="p2 hover">Hợp tác bán hàng</p>
+                        <p class="p2 hover">Điều kiện & điều khoản</p>
+                        <p class="p2 hover">Quy chế quản lý</p>
+                        <p class="p2 hover">Chính sách bảo mật</p>
+                    </div>
+                </div>
+                <div class="footer-3 col l-3 m-3 c-12">
+                    <h3>Câu hỏi thường gặp</h3>
+                    <div>
+                        <p class="p2 hover">Hỏi đáp</p>
+                        <p class="p2 hover">Liên hệ</p>
+                        <p class="p2 hover">Biểu phí giao hàng</p>
+                        <p class="p2 hover">Thẻ quà tặng</p>
+                        <p class="p2 hover">Danh mục sản phẩm</p>
+                        <p class="p2 hover">Kiểm tra đơn hàng</p>
+                    </div>
+                </div>
+                <div class="footer-4 col l-3 m-3 c-12">
+                    <h3>Đăng ký nhận bản tin</h3>
+                    <div>
+                        <input type="text" placeholder="Nhập email đăng ký">
+                        <div>Đăng ký</div>
+                    </div>
+                    <h3 class="fanpage">FANPAGE</h3>
+                    <div>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="author">Copyright by UngPhuVinh</div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html1>

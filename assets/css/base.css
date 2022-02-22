@@ -1,0 +1,26 @@
+/* Reset CSS*/
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%; /* tương đương 10px*/
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6rem;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        top: 85px;
+    } 
+    to {
+        opacity: 1;
+        top: 75px;
+    }
+}
+
