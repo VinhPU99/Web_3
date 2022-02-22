@@ -141,6 +141,33 @@ let flagD2 = false
 let leftNeed2  // lưu vị trí con chuột trong thẻ div items-outner.
 let marginMove = 0
 
+// handle on mobile
+outner.addEventListener('touchstart',(e,mouse) => {
+    flagD2 = true
+    leftNeed2 = e.targetTouches[0] - inner.offsetLeft
+    console.log(flagD2)
+})
+
+window.addEventListener('touchend', e => {
+    flagD2 = false
+    outner.style.cursor = 'grab'
+    console.log(flagD2)
+
+})
+
+
+outner.addEventListener('touchmove', (e) => {
+    if (flagD2 == false) 
+        return
+    else {
+        outner.style.cursor = 'grabling'
+        inner.style.left = `${e.targetTouches[0] - leftNeed2}px`
+        console.log(flagD2)
+    }
+    checkboundary2()
+})
+
+// handle on pc
 outner.addEventListener('mousedown',(e,mouse) => {
     flagD2 = true
     leftNeed2 = e.offsetX - inner.offsetLeft
