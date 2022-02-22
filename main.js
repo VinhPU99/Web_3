@@ -105,7 +105,7 @@ let leftNeed  // lưu vị trí con chuột trong thẻ div imgs
 
 container_dragSlider.addEventListener('touchstart', e => {
     flagD = true
-    leftNeed = e.offsetX - imgs.offsetLeft
+    leftNeed = e.targetTouches[0].clientX - imgs.offsetLeft
 })
 
 window.addEventListener('touchend', e => {
@@ -117,7 +117,7 @@ container_dragSlider.addEventListener('touchmove', e => {
     if (flagD == false) 
         return
     else  {
-        imgs.style.left = `${e.offsetX - leftNeed}px`
+        imgs.style.left = `${e.targetTouches[0].clientX - leftNeed}px`
     }
     checkboundary()
 })
