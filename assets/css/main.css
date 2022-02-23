@@ -217,9 +217,10 @@
     list-style: none;
     position: absolute;
     width: 200px;
-    left: 200px;
+    left: 197px;
     top: 0px;
     display: none;
+    background-color: var(--white);
 }
 
 .subnav-2::before {
