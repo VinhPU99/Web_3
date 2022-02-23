@@ -144,7 +144,7 @@ let marginMove = 0
 // handle on mobile
 outner.addEventListener('touchstart',(e,mouse) => {
     flagD2 = true
-    leftNeed2 = e.targetTouches[0] - inner.offsetLeft
+    leftNeed2 = e.targetTouches[0].clientX - inner.offsetLeft
     console.log(flagD2)
 })
 
@@ -161,14 +161,14 @@ outner.addEventListener('touchmove', (e) => {
         return
     else {
         outner.style.cursor = 'grabling'
-        inner.style.left = `${e.targetTouches[0] - leftNeed2}px`
+        inner.style.left = `${e.targetTouches[0].clientX - leftNeed2}px`
         console.log(flagD2)
     }
     checkboundary2()
 })
 
 // handle on pc
-outner.addEventListener('mousedown',(e,mouse) => {
+outner.addEventListener('mousedown',(e) => {
     flagD2 = true
     leftNeed2 = e.offsetX - inner.offsetLeft
     console.log(flagD2)
