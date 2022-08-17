@@ -1007,6 +1007,10 @@
         padding-right:  0;
     }
 
+    .container_dragSlider {
+        overflow: hidden;
+    }
+
 }
 
 /* moblie */
